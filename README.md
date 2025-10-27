@@ -1,19 +1,14 @@
-# 🌟 Lista de Tarefas 06 — Spring Boot + Vue.js
+# Lista de Tarefas 06 — Spring Boot + Vue.js
 
-## 👨‍💻 Autor
-**Ruan da Silva Pereira**
+## Aluno
+**Gabriel Henrique Pereira - RA 2411550620**
 
+## 1 - Problema Encontrado
+Os títulos das tarefas não apareciam no frontend.  
 
+## 2 - Correção Realizada
 
-## 🐞 1️⃣ Problema Encontrado
-❌ Os títulos das tarefas não apareciam no frontend.  
-⚠️ **Causa:** Dados de seed não carregavam devido ao bloqueio do **CORS** no backend.
-
-
-
-## 🛠️ 2️⃣ Correção Realizada
-
-### 🔹 Backend (Spring Boot)
+### Backend (Spring Boot)
 Configuração de **CORS** adicionada para liberar acesso do frontend:
 
 ```java
@@ -32,9 +27,9 @@ public class WebConfig {
     }
 }
 ````
-✅ Agora o frontend consegue acessar os dados do backend sem erros de CORS.
+Agora o frontend consegue acessar os dados do backend sem erros de CORS.
 
-### 🔹 Frontend (Vue.js)
+### Frontend (Vue.js)
 Ajuste no componente para exibir corretamente os títulos das tarefas:
 
 ````css
@@ -43,14 +38,14 @@ Ajuste no componente para exibir corretamente os títulos das tarefas:
 {{ tarefa.titulo }}
 </span>
 ````
-✅ Títulos aparecem corretamente e a lista funciona normalmente.
+Títulos aparecem corretamente e a lista funciona normalmente.
 
 
 ---
 
 
-## 🚀 3️⃣ Como Rodar
-### 🔹 Backend
+## 3 - Como Rodar
+### Backend
 Abra o projeto Spring Boot no IDE.
 
 Rode a aplicação **(ApiApplication.java).**
@@ -62,7 +57,7 @@ http://localhost:8088/api
 
 ---
 
-### 🔹 Frontend
+### Frontend
 Entre na pasta do projeto Vue.
 
 Instale dependências:
@@ -81,7 +76,7 @@ http://localhost:5173
 
 ---
 
-### 📌 4️⃣ Funcionalidades Corrigidas
+### 📌 4️ - Funcionalidades Corrigidas
 > 📝 Listar tarefas
 >
 > ➕ Adicionar novas tarefas
@@ -97,9 +92,9 @@ http://localhost:5173
 
 ---
 
-### 📂 Observações Finais
-> ✔️ Aplicação funcionando após correção do CORS
->
+### Observações
 > ✔️ Todos os dados carregam corretamente
+>
+> ✔️ Aplicação funcionando após correção do CORS
 > 
 > ✔️ Projeto pronto para entrega individual
